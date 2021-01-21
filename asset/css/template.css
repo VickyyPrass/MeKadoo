@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*************************************************/
+
+
+/*******************HEADER************************/
+
+
+/*************************************************/
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header .top-bar {
+    padding: 5px 0;
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(3, 9, 68, 1) 0%, rgba(6, 55, 126, 1) 43%, rgba(7, 71, 130, 1) 100%);
+}
+
+nav a.navbar-brand img {
+    width: 6em;
+}
+
+nav .button-bar .search i {
+    padding-top: 11px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+nav .button-bar .wishlist i,
+nav .button-bar .cart i {
+    padding-left: 20px;
+}
+
+nav .button-bar .wishlist i:hover {
+    color: #ff0000;
+}
+
+nav .button-bar .cart i:hover {
+    color: #ff0000;
+}
+
+header input.search_keyword {
+    display: none;
+    width: 60%;
+    height: 35px;
+    background-color: #051E5E;
+    color: #fff;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    padding: 0 20px;
+    margin: 20px 0 20px 13%;
+    box-shadow: 2px 5px 10px 1px black;
+}
+
+header input.search_keyword.show1 {
+    display: inline-block;
+    animation: showInput .5s;
+}
+
+header .btn-search {
+    display: none;
+    background-color: #051E5E;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 5px 10px 1px black;
+    padding: 0 20px;
+    color: #fff;
+    height: 36px;
+    margin-left: -4px;
+    border: none;
+    outline: none;
+}
+
+header .btn-search.show2 {
+    display: inline-block;
+}
+
+@keyframes showInput {
+    0% {
+        width: 0;
+        transform: skew(0deg, 0deg);
+    }
+    25% {
+        transform: skew(3deg, 3deg);
+    }
+    75% {
+        transform: skew(-3deg, -3deg);
+    }
+    to {
+        width: 60%;
+        transform: skew(0deg, 0deg);
+    }
+}
+
+
+/*************************************************/
+
+
+/******************FOOTER*************************/
+
+
+/*************************************************/
+
+footer {
+    background-color: #e9eef3;
+}
+
+footer .footer-contain ul li {
+    list-style: none;
+}
+
+footer .copyright {
+    margin-top: 60px;
+}
+
+footer .copyright img {
+    width: 110px;
+    height: 50px;
+}
+
+
+/*************************************************/
+
+
+/*****************RESPONSIVE**********************/
+
+
+/*************************************************/
+
+@media screen and (max-width: 768px) {
+    header .top-bar {
+        font-size: 11px;
+    }
+    nav a.navbar-brand img {
+        width: 5em;
+    }
+}
+
+@media screen and (width: 576px) {}
